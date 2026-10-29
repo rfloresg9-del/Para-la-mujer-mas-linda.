@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Rocío ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 35%,#411334,#14091f 70%);color:#fff;font-family:Georgia,serif;display:flex;justify-content:center;align-items:center;text-align:center;overflow-x:hidden}.wrap{position:relative;z-index:2;padding:36px 18px;max-width:620px;width:100%}h1{font-size:clamp(2.3rem,8vw,4rem);color:#ffadd4;text-shadow:0 0 22px #ff3f9b;margin:0 0 10px}.sub{color:#ffd4e9;font-size:1.15rem}.heart{font-size:clamp(9rem,40vw,15rem);line-height:1.25;color:#ff275f;text-shadow:0 0 20px #ff296e,0 0 60px #e90056;animation:draw 1.8s ease-out both,beat 1.25s ease-in-out 1.8s infinite;display:inline-block;transform-origin:center}@keyframes draw{from{opacity:0;transform:scale(.1)}to{opacity:1;transform:scale(1)}}@keyframes beat{0%,100%{transform:scale(1)}25%{transform:scale(1.1)}45%{transform:scale(1)}65%{transform:scale(1.07)}}button{border:0;border-radius:30px;background:linear-gradient(90deg,#ff4386,#ff75b1);color:white;font-size:1.08rem;padding:15px 25px;cursor:pointer;box-shadow:0 6px 25px #ff297650}button:hover{filter:brightness(1.1)}.float{position:fixed;bottom:-30px;z-index:1;color:#ff80b8;opacity:.5;pointer-events:none;animation:rise linear infinite}@keyframes rise{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}dialog{border:1px solid #ff8dbf;border-radius:22px;background:#30152f;color:#fff;max-width:min(90vw,480px);padding:30px;box-shadow:0 20px 90px #0009;line-height:1.8}dialog::backdrop{background:#08030bc9}dialog h2{color:#ffafd2}dialog p{white-space:pre-line}dialog button{margin-top:10px}
+</style>
+</head><body>
+<main class="wrap"><h1>Para ti, Rocío ❤️</h1><p class="sub">Tengo una sorpresa para ti...</p><div class="heart" aria-label="Corazón rojo">♥</div><p class="sub">Hice este pequeño detalle pensando en ti ✨</p><button id="abrir">💌 Abre tu carta, Rocío</button></main>
+<dialog id="carta"><h2>💌 Para Rocío 💌</h2><p>Desde que llegaste a mi vida,
+hay muchos más motivos para sonreír.
+
+Gracias por cada momento bonito,
+por tu cariño y por ser tan especial.
+
+Este pequeño corazón lo programé para ti,
+porque quería regalarte algo diferente.
+
+Te amo muchísimo. ❤️</p><button id="cerrar">Cerrar carta ❤️</button></dialog>
+<script>
+const carta=document.getElementById('carta');document.getElementById('abrir').onclick=()=>carta.showModal();document.getElementById('cerrar').onclick=()=>carta.close();
+for(let i=0;i<25;i++){const h=document.createElement('span');h.className='float';h.textContent='♥';h.style.left=Math.random()*100+'%';h.style.fontSize=(12+Math.random()*22)+'px';h.style.animationDuration=(6+Math.random()*9)+'s';h.style.animationDelay=(-Math.random()*15)+'s';document.body.appendChild(h)}
+</script></body></html>
